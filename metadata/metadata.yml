@@ -1,0 +1,20 @@
+metadata_version: 1
+name: On the Workspace of Electromagnetic Navigation Systems
+description: Accompanying code for the paper "On the Workspace of Electromagnetic
+  Navigation Systems" by Boehler, Q. et al.
+authors:
+- name: Quentin Boehler
+  affiliations:
+  - name: ETH Zurich
+- name: Simone Gervasoni
+  affiliations:
+  - name: ETH Zurich
+- name: Samuel Charreyron
+  affiliations:
+  - name: ETH Zurich
+- name: Christophe Chautems
+  affiliations:
+  - name: ETH Zurich
+corresponding_contributor:
+  name: Quentin Boehler
+  email: qboehler@ethz.ch

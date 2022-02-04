@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -ex
+
+# This is the master script for the capsule. When you click "Reproducible Run", the code in this file will execute.
+cd Workspace_eMNS
+
+# set backend to Agg (headless)
+export MPLBACKEND=Agg
+
+# execute all notebooks in parallel
+for f in *.ipynb
+do
+    jupyter nbconvert \
+      --ExecutePreprocessor.allow_errors=True \
+      --ExecutePreprocessor.timeout=-1 \
+      --to html \
+      --FilesWriter.build_directory=../../results \
+      --execute "$f" &
+done
+
+wait
